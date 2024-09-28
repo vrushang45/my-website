@@ -1,0 +1,330 @@
+
+:root{
+        --mainColor:hsl(282, 20%, 25%);
+        --secondaryColor:#382A3F;
+    
+    
+        --borderColor:#1d1520;
+    
+        --mainText:#fff;
+        --secondaryText:#eeeeee;
+    
+        --themeDotBorder:#fff;
+    
+    
+        --previewBg: rgb(29,21,32,0.8);
+        --previewShadow: #2b202f;
+    
+    
+    
+        --buttonColor: #8534a3;
+}
+    
+
+
+html,body{
+	padding: 0;
+	margin: 0;
+}
+
+body *{
+	transition: 0.3s;
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+	color: var(--mainText);
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 500;
+}
+
+p, li, span, label, input, textarea{
+	color: var(--secondaryText);
+	font-family: 'Nunito', sans-serif;
+
+}
+
+a{
+	text-decoration: none;
+	color: #17a2b8;
+}
+
+ul{
+	list-style: none;
+}
+
+#disease-detector-image{
+    width: 400px;
+    object-fit: scale-down;
+}
+
+h1{ font-size: 56px }
+h2{ font-size: 36px }
+h3{ font-size: 28px }
+h4{ font-size: 24px }
+h5{ font-size: 20px }
+h6{ font-size: 16px }
+
+.s1{
+	background-color: var(--mainColor);
+	border-bottom:1px solid var(--borderColor);
+	overflow: auto; 
+}
+
+.s2{
+	background-color: var(--secondaryColor);
+	border-bottom:1px solid var(--borderColor); 
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+.empty-wrapper{
+    display: grid;
+	align-content: center;
+	text-align: center;
+	min-height: 7em;
+}
+
+.intro{
+    
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-bottom: 100px;
+}
+
+.inside_intro{
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	grid-template-areas: 
+		'left-intro right-intro'
+    ;
+    
+}
+
+.left-intro{
+    grid-area: left-intro;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+
+#profile_pic{
+	display: block;
+	margin: 0 auto;
+
+	height: 300px;
+	width: 300px;
+	object-fit: cover;
+	border: 2px solid black;
+}
+
+
+.right-intro{
+    grid-area: right-intro;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.intro1{
+    color: var(--secondaryTextColor);  
+}
+
+
+.address{
+    color: var(--secondaryTextColor);
+}
+
+.address1{
+    font-size: 20px;
+}
+
+.phone{
+    font-size: 20px;
+}
+
+.email{
+    font-size: 20px;
+}
+
+.education{
+    text-align: center;
+}
+
+#clglogo{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cpi{
+    font-size: 26px;
+    color: var(--secondaryText);
+    text-align: center;
+}
+
+.aboutMe_skills{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	grid-template-areas: 
+		'skills connect_with_me'
+    ;
+}
+
+.skills-list{
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+
+    margin: 50px ;
+
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    gap:50px;
+}
+
+.social-links{
+	display: grid;
+	align-content: center;
+	text-align: center;
+	gap:5px;
+}
+
+.social-links-icons{
+	display: grid;
+	align-content: center;
+	grid-template-columns: auto auto auto;
+	row-gap:50px;
+	column-gap: 50px;
+}
+
+.project-list{
+    background-color: var(--secondaryColor);
+    color: black;   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+
+.projects{  
+    padding-bottom: 10px;
+    background-color: #eaeaea;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+}
+
+.projects1{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.project-pic{
+    display: block;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.project-title{
+    margin: 0;
+    padding: 5px;
+}
+
+.project-description{
+    margin: 0;
+}
+
+#achievements{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.achievement-list{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 200px;
+    justify-content: center;
+ }
+
+ .achievement{
+     background-color: var(--secondaryColor);
+     justify-content: center;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+
+ .achiexp{
+     padding-bottom: 80px;
+ }
+
+ #footer{
+     background-color: var(--secondaryColor);
+     padding-top: 50px;
+     padding-left: 30px;
+     padding-right: 30px;
+
+     display: flex;
+     justify-content: space-between;
+    }
+
+ #copyright-img{
+     width: 16px;
+     height: 16px;
+ }
+
+ .menu{
+     color: var(--secondaryText)
+ }
+
+@media screen and (max-width: 1200px){
+    .intro{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .inside_intro{
+        display: grid;
+	    grid-template-columns: 1fr;
+	
+	    grid-template-areas: 
+            'left-intro' 
+            'right-intro'
+        ;
+
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    
+    #profile_pic{
+        width: 200px;
+        height: 200px;
+    }
+}
+    
+
+@media screen and (max-width: 800px){
+    .aboutMe_skills{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+            'skills'
+            'connect_with_me'
+        ;
+    
+      }
+}
